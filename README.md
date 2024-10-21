@@ -5,3 +5,4 @@ https://github.com/user-attachments/assets/74da0bb5-4f02-4ebe-b057-802798f6e730
 - Room database
 - Coroutine, StateFlow
 - Jetpack Navigation (NavGraph)
+- Material design componant
