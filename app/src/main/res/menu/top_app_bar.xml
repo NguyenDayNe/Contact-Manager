@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/pick_json"
+        android:title="Import From Json"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/deleteAllContact"
+        android:title="Delete All Contact"
+        app:showAsAction="never"/>
+    <item android:id="@+id/exit"
+        android:title="Exit"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/addContact"
+        android:title="add contact"
+        android:icon="@drawable/ic_contact_add"
+        app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    app:startDestination="@id/home_Fragment">
+
+    <fragment
+        android:id="@+id/home_Fragment"
+        android:name="com.sf.contactmanager.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_Fragment_to_add2"
+            app:destination="@id/add2" />
+        <action
+            android:id="@+id/action_home_Fragment_to_viewContactFragment"
+            app:destination="@id/viewContactFragment" >
+
+            <argument android:name="contact"
+                app:argType="com.sf.contactmanager.model.Contact"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/add2"
+        android:name="com.sf.contactmanager.fragment.AddContactFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/viewContactFragment"
+        android:name="com.sf.contactmanager.fragment.ViewContactFragment"
+        android:label="fragment_view_contact"
+        tools:layout="@layout/fragment_view_contact" >
+        <argument android:name="contact"
+            app:argType="com.sf.contactmanager.model.Contact"/>
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.sf.contactmanager.fragment.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" >
+        <action
+            android:id="@+id/action_blankFragment_to_home_Fragment"
+            app:destination="@id/home_Fragment" />
+        <action
+            android:id="@+id/action_blankFragment_to_add2"
+            app:destination="@id/add2" />
+    </fragment>
+</navigation>
